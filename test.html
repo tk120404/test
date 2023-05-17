@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .section {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 436px;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+        }
+
+        .illustration {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 114px;
+            gap: 20px;
+        }
+
+        .mainContent {
+            margin-top: 84px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .circle {
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .18);
+        }
+
+        .circleNone {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #B6DFFE;
+        }
+
+        .inner-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .circleNone .inner-circle {
+            background-color: #B6DFFE;
+        }
+
+        .connecting-line {
+            flex: 1;
+            height: 4px;
+            background-color: #fff;
+            opacity: 60%;
+        }
+
+        .top {
+            height: 156px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            background: linear-gradient(129deg, #5F78F9, #49AFFD);
+            border-top-left-radius: 32px;
+            border-top-right-radius: 32px;
+        }
+
+        .stepper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .label-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 488px;
+
+        }
+
+        .stepLabel {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .bottom {
+            padding: 0 16px 40px 16px;
+            background: #F0F3F999;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+        }
+
+        .bottomHeader {
+            height: 56px;
+            align-items: center;
+            display: flex;
+            border-bottom: solid 1px #B8B9BD;
+        }
+
+        .bottomBody {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        .shipmentDetails {
+            display: flex;
+        }
+
+        .detailsContainer {
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .det {
+            font-size: 12px;
+            color: #71747A;
+        }
+
+        .detBlack {
+            font-size: 12px;
+            color: #42454E;
+        }
+
+        .pickDrops {
+            padding: 0px 36px;
+        }
+
+        .pdDetails {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .circlePd {
+            width: 24px;
+            height: 24px;
+            background: #18BE8A;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        .address {
+            font-size: 12px;
+            color: #42454E;
+        }
+
+        .connectingVerticalLine {
+            width: 2px;
+            height: 38px;
+            background: #D0D1D3;
+            margin: 4px 0 4px 11px;
+        }
+
+        .logoSection {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footerLeft {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .footerLeftLabel {
+            font-size: 12px;
+            color: #42454E;
+        }
+
+        .footerRight {
+            font-size: 10px;
+            color: #42454E;
+        }
+
+        .links {
+            display: flex;
+            gap: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section" style="width: 600px;">
+        <div class="content" style="width: 600px;padding: 40px;">
+            <div class="header">
+                <div class="left" style="float:left">
+                    <img src="assets/smartruck logo.svg" alt="">
+                </div>
+                <div class="right" style="float:right">
+                    <img src="assets/smartruck logo.svg" alt="">
+                </div>
+            </div>
+            <div class="illustration">
+                <div class="icon">
+                    <img src="assets/truck illustration.svg" alt="">
+                </div>
+                <div class="textData" style="font-size: 24px;color: #131722">
+                    LR123 - Booked  - <a href="www.google.com" target="blank">ePOD</a>  
+                </div>
+            </div>
+            <div class="mainContent" style="margin-top: 84px;">
+                <div class="mainHeader">
+                    <div class="label" style="font-size: 16px;color: #42454E;">
+                        Booked
+                    </div>
+                    <div class="date" style="font-size: 28px;color: #2962FF;font-weight: bold;">
+                        Saturday, March 22nd
+                    </div>
+                </div>
+                <div class="mainBody">
+                    <div class="card" style="width: 100%;" >
+                        <div class="top" style="width: 100%;">
+                            <div class="stepper">
+                                <div class="circle-container">
+                                    <div class="circleNone">
+                                        <div class="inner-circle"></div>
+                                    </div>
+                                    <div class="connecting-line"></div>
+                                    <!-- <div class="circle">
+            <div class="inner-circle"></div>
+        </div> -->
+                                    <div class="circle">
+                                        <div class="inner-circle"></div>
+                                    </div>
+                                    <div class="connecting-line"></div>
+                                    <!-- <div class="circle">
+            <div class="inner-circle"></div>
+        </div> -->
+                                    <div class="circleNone">
+                                        <div class="inner-circle"></div>
+                                    </div>
+                                    <div class="connecting-line"></div>
+                                    <!-- <div class="circle">
+            <div class="inner-circle"></div>
+        </div> -->
+                                    <div class="circleNone">
+                                        <div class="inner-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="label-container" style="margin-left: 45px;">
+                                    <div class="stepLabel">Order Booked</div>
+                                    <div class="stepLabel">In-Transit</div>
+                                    <div class="stepLabel">Out for Delivery</div>
+                                    <div class="stepLabel">Delivered</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom"  style="width: 95%;">
+                            <div class="bottomHeader">
+                                <p style="font-size: 14px;
+                                color: #131722;
+                                font-weight: 600;">Shipment details</p>
+                            </div>
+                            <div class="bottomBody">
+                                <div class="shipmentDetails">
+                                    <div class="detailsContainer">
+                                        <div class="det">
+                                            AWB/LR : 
+                                        </div>
+                                        <div class="det">
+                                            Current Status :
+                                        </div>
+                                        <div class="det">
+                                            Carrier :
+                                        </div>
+                                        <div class="det">
+                                            Shipper :
+                                        </div>
+                                        <div class="det">
+                                            Customer :
+                                        </div>
+                                    </div>
+                                    <div class="detailsContainer" style="width: auto">
+                                        <div class="detBlack">
+                                            LR123
+                                        </div>
+                                        <div class="detBlack">
+                                            Shipment is loaded for Mumbai
+                                        </div>
+                                        <div class="detBlack">
+                                            VExpress
+                                        </div>
+                                        <div class="detBlack">
+                                            RDC-DELHI
+                                        </div>
+                                        <div class="detBlack">
+                                            Delivery Location name
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pickDrops">
+                                    <div class="pdDetails">
+                                        <div class="circlePd">
+                                            <div class="label">
+                                                P
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            - RDC Mundka, delivery 121005
+                                        </div>
+                                    </div>
+                                    <div class="connectingVerticalLine"></div>
+                                    <div class="pdDetails">
+                                        <div class="circlePd" style="background-color: #E24D65;">
+                                            <div class="label">
+                                                D
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            - Some Location addres 121212
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footerLeft">
+                        <div class="footerLeftLabel">
+                            Powered by
+                        </div>
+                        <img src="assets/smartruck logo.svg" alt="">
+                    </div>
+                    <div class="footerRight">
+                        ©2023 SmarTruck.com. All Rights Reserved.
+                    </div>
+                </div>
+                <div class="links">
+                    <img src="assets/globe-americaswebsite.svg" alt="">
+                    <img src="assets/linkedin_icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
